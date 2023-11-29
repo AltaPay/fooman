@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Fooman extension with Altapay integration
+ *
+ * Copyright © 2018 Altapay. All rights reserved.
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="additional_orderline_event_observer">
+        <observer name="fetch_additional_orerline_observer" instance="Altapay\Fooman\Observer\GetOrderLine"/>
+    </event>
+</config>

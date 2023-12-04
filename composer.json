@@ -1,0 +1,18 @@
+{
+  "name": "altapay/magento2-fooman",
+  "license": "MIT",
+  "description": "Fooman extension with Altapay integration",
+  "version": "1.0.0",
+   "require": {
+        "php": "^7.0 || ^8.1",
+        "altapay/magento2-community": "^3.7",
+        "fooman/order-fees-implementation-m2": "101.5.0"
+  },
+  "type": "magento2-module",
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Altapay\\Fooman\\": ""
+    }
+  }
+}
